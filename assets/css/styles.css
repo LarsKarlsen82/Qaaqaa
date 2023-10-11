@@ -62,23 +62,24 @@ body.dark-mode .details {
     color: #ffffff;
 }
 
+/* Media query for smaller screens */
 @media screen and (max-width: 420px) and (max-height: 850px) {
 /* CSS styles for viewport size max 420 width and max 850 height pixels */
 
 
 .card {
-    width:  90%;
-    max-width:  470px;
+    width:  100%;
+    max-width:  420px;
     /* background: linear-gradient(135deg, #00feba, #5b548a); */
     /* background: linear-gradient(180deg, lightgrey, white,lightgrey); */
     color: red;
-    margin: 100px auto 0;
+    margin: 1rem auto 0;
     border-radius: 20px;
     padding: 40px 35px;
     text-align: center;
 }
 .search {
-    width: 100%;
+    width: 2rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -90,23 +91,23 @@ body.dark-mode .details {
     background: linear-gradient(#2AFADF,#4C83FF);
     color:white;
     padding: 10px 25px;
-    height:  60px;
+    height:  3rem;
     border-radius: 30px;
     flex: 1;
     margin-right: 16px;
     font-size: 18px;
 }
 .search button {
+    width: 3rem; /* Set a specific width for the button */
     border: 0;
     outline: 0;
     background: linear-gradient(#2AFADF,#4C83FF);
     border-radius: 50%;
-    width: 60px;
-    height: 60px;
+    height: 3rem;
     cursor: pointer;
 }
 .search button img{
-    width: 30px;
+    width: 2.3rem;
 }
 
 .weather {
@@ -206,8 +207,154 @@ body.dark-mode .details {
 
 }
 
+
+/* Media query for tablet screens */
+@media screen and (max-width: 1200px) and (max-height: 990px) {
+    /* CSS styles for viewport size max 1200 width and max 990 height pixels */
+    
+
+    .card {
+        width:  100%;
+        max-width:  420px;
+        /* background: linear-gradient(135deg, #00feba, #5b548a); */
+        /* background: linear-gradient(180deg, lightgrey, white,lightgrey); */
+        color: red;
+        margin: 1rem auto 0;
+        border-radius: 20px;
+        padding: 40px 35px;
+        text-align: center;
+    }
+    .search {
+        width: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .search input{
+        border: 0;
+        outline: 0;
+        background: linear-gradient(#2AFADF,#4C83FF);
+        color:white;
+        padding: 10px 25px;
+        height:  3rem;
+        border-radius: 30px;
+        flex: 1;
+        margin-right: 16px;
+        font-size: 18px;
+    }
+    .search button {
+        width: 3rem; /* Set a specific width for the button */
+        border: 0;
+        outline: 0;
+        background: linear-gradient(#2AFADF,#4C83FF);
+        border-radius: 50%;
+        height: 3rem;
+        cursor: pointer;
+    }
+    .search button img{
+        width: 2.3rem;
+    }
+    
+    .weather {
+        display: none;
+        /* Add more styles as needed */
+    }
+    .weather-icon {
+        width: 170px;
+        margin-top: 30px;
+    }
+    .weather h1 {
+        font-size: 80px;
+        font-weight: 500;
+    
+    }
+    .weather h2 {
+        font-size: 45px;
+        font-weight: 400;
+        margin-top: -10px;
+        
+    }
+    .details {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 20px;
+        margin-top: 50px;
+    
+    }
+    .col {
+        display: flex;
+        align-items: center;
+        text-align: left;
+    }
+    .col img {
+        width: 40px;
+        margin-right: 10px;
+    }
+    .humidity, .wind {
+        font-size: 28px;
+        margin-top: -6px;
+    
+    }
+    .weather {
+        display: none;
+    }
+    .error {
+        text-align: left;
+        margin-left: 10px;
+        font-size: 14px;
+        margin-top: 10px;
+        display: none;
+    }
+    /* weather.css */
+    .transition {
+        transition: opacity 0.5s ease-in-out;
+    }
+    
+    
+    /* Styles for the switch input */
+    .toggle-input {
+        display: none;
+    }
+    
+    /* Styles for the switch label (slider) */
+    .toggle-label {
+        position: relative;
+        display: inline-block;
+        width: 2rem;
+        /* height: 60px; Set the height to make it vertical */
+        height: 3.5rem; /* Set the height to make it vertical */
+        background: #4C83FF;
+        border-radius: 15px;
+        transition: transform 0.4s;
+        transform-origin: center; /* Set the transform origin to the center */
+        left: 79.5%!important;
+    }
+    
+    /* Style for the switch label (slider) when it's active */
+    .toggle-input:checked + .toggle-label:before {
+        content: "";
+        position: absolute;
+        width: 1.9rem;
+        height: 2rem;
+        background: linear-gradient(#2AFADF, #4C83FF);
+        border-radius: 50%;
+        transition: transform 0.4s, background-color 0.4s;
+        transform: translateY(-100%); /* Move the slider button to the top when ON */
+        margin-top: 100%;
+    }
+    
+    /* Style for the switch label (slider) when it's OFF but checked */
+    .toggle-input:checked + .toggle-label {
+        background-color: #4C83FF;
+    }
+    
+    }
+
+
 /* Media query for larger screens */
-@media (min-width: 769px) {
+@media screen and (max-width: 1920px) and (max-height: 1080px) {
     /* Adjustments for larger screens */
 
     /* Example: Increase font size for body text on larger screens */
