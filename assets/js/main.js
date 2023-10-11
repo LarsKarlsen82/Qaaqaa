@@ -31,4 +31,5 @@ searchBtn.addEventListener('click', async () => {
         document.querySelector('.error').style.display = 'block';
         document.querySelector('.weather').style.display = 'none';
     }
+    console.info('Vakaavaat');
 });
