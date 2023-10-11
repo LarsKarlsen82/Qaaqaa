@@ -1,5 +1,5 @@
 // weatherApi.js
-import apiKey from '/assets/js/apiKey.js';
+import apiKey from './js/apiKey.js';
 
 export async function fetchWeatherData(city) {
     try {
