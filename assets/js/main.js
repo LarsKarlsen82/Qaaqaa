@@ -2,7 +2,7 @@
 //import { fetchWeatherData } from './assets/js/module/weatherApi.js';
 //import { updateWeatherUI } from './assets/js/weatherDisplay.js';
 import { fetchWeatherData } from '/module/weatherApi.js';
-//import { updateWeatherUI } from '/weatherDisplay.js';
+import { updateWeatherUI } from '/weatherDisplay.js';
 
 const searchBox = document.querySelector('.search input');
 const searchBtn = document.querySelector('.search button');
