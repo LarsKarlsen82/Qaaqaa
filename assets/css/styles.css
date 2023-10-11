@@ -209,7 +209,7 @@ body.dark-mode .details {
 
 
 /* Media query for tablet screens */
-@media screen and (max-width: 1200px) and (max-height: 990px) {
+@media screen and (min-width: 900px) and (max-height: 990px) {
     /* CSS styles for viewport size max 1200 width and max 990 height pixels */
     
 
@@ -354,7 +354,7 @@ body.dark-mode .details {
 
 
 /* Media query for larger screens */
-@media screen and (max-width: 1920px) and (max-height: 1080px) {
+@media screen and (min-width: 1366px) and (max-height: 1080px) {
     /* Adjustments for larger screens */
 
     /* Example: Increase font size for body text on larger screens */
