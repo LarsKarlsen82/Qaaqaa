@@ -63,7 +63,7 @@ body.dark-mode .details {
 }
 
 /* Media query for smaller screens */
-@media screen and (max-width: 420px) and (max-height: 850px) {
+@media screen and (min-width: 280px) and (max-width: 420px) {
 /* CSS styles for viewport size max 420 width and max 850 height pixels */
 
 
@@ -79,7 +79,6 @@ body.dark-mode .details {
     text-align: center;
 }
 .search {
-    width: 2rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -103,11 +102,10 @@ body.dark-mode .details {
     outline: 0;
     background: linear-gradient(#2AFADF,#4C83FF);
     border-radius: 50%;
-    height: 3rem;
     cursor: pointer;
 }
 .search button img{
-    width: 2.3rem;
+    width: 2.6rem;
 }
 
 .weather {
@@ -209,7 +207,7 @@ body.dark-mode .details {
 
 
 /* Media query for tablet screens */
-@media screen and (min-width: 900px) and (max-height: 990px) {
+@media screen and (min-width: 421px) and (max-width: 1280px) {
     /* CSS styles for viewport size max 1200 width and max 990 height pixels */
     
 
@@ -253,7 +251,7 @@ body.dark-mode .details {
         cursor: pointer;
     }
     .search button img{
-        width: 2.3rem;
+        width: 3rem;
     }
     
     .weather {
@@ -330,6 +328,7 @@ body.dark-mode .details {
         transition: transform 0.4s;
         transform-origin: center; /* Set the transform origin to the center */
         left: 79.5%!important;
+        top: -20rem;
     }
     
     /* Style for the switch label (slider) when it's active */
@@ -354,7 +353,7 @@ body.dark-mode .details {
 
 
 /* Media query for larger screens */
-@media screen and (min-width: 1366px) and (max-height: 1080px) {
+@media screen and (min-width: 1281px) and (max-width: 1920px) {
     /* Adjustments for larger screens */
 
     /* Example: Increase font size for body text on larger screens */
