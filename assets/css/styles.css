@@ -62,8 +62,8 @@ body.dark-mode .details {
     color: #ffffff;
 }
 
-/* Media query for smaller screens */
-@media (max-width: 768px) {
+@media screen and (max-width: 420px) and (max-height: 850px) {
+/* CSS styles for viewport size max 420 width and max 850 height pixels */
 
 
 .card {
